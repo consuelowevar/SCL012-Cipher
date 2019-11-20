@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head profile ="Laboratoria git proyecto Cipher/SCL012-Cipher/src/logo Cien-01.png">
+    <link rel= "icon" type= "image/png" href="logo Cienc-01.png">
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
+
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
-    <script src="cipher.js"></script>
+    <section id="main">
+      <header id="top">
+        <img src="logo Cienc-01.png"> 
+      </header>
+
+      <!--        __INICIO ACCESO__      -->
+      <div id="home">
+        <h1>CENTRO DE INTELIGENCIA ESPECIAL NACIONAL DE CHILE</h1>
+        
+        <p id="bienvenida">
+            Bienvenido(a) a la plataforma de gobierno CIENC creada para funcionarios
+            del Estado.<br>Diseñada para encriptar mensajes,correos, informes o cualquier escrito de carácter confidencial.</p>
+
+        <button id="acceso" type="button" class="boton"> ACCEDER </button>
+      </div>
+      
+      <!--     ___SECCION  CIFRAR___      -->
+      <div id="sectionCifrado">
+        <p id="instruccion"><span>PARA CIFRAR:</span><br>
+        1.- Ingrese su texto en la caja de texto.<br>
+        2.- Elija un numero para la clave.
+        2.- Presione el boton cifrar  </p>
+
+        <p>Escriba su mensaje:</p>
+        <textarea id="textcaja" placeholder="Ingrese aquí su texto" rows="20" cols="50"></textarea>
+      
+        <input  id="offset" type="number" min="0"/>Clave número
+        
+        <button id="actionCipher" type="button" class="boton" >CIFRAR</button>
+        
+        <button id="actionDescipher" type="button" class="boton" >DESCIFRAR</button>
+        
+        <button id="limpiar" type="button" class="boton" >LIMPIAR</button>
+
+        <textarea id="outText" rows="20" cols="50"></textarea>
+      </div>
+
+    </section>
+
+    
     <script src="index.js"></script>
+    <script src="cipher.js"></script>
   </body>
 </html>
