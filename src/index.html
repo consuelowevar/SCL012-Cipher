@@ -25,27 +25,42 @@
         <button id="acceso" type="button" class="boton"> ACCEDER </button>
       </div>
       
-      <!--     ___SECCION  CIFRAR___      -->
-      <div id="sectionCifrado">
-        <p id="instruccion"><span>PARA CIFRAR:</span><br>
-        1.- Ingrese su texto en la caja de texto.<br>
-        2.- Elija un numero para la clave.
-        2.- Presione el boton cifrar  </p>
+      <div id=container>
+          
+        <div id="sectionCifrado">
 
-        <p>Escriba su mensaje:</p>
-        <textarea id="textcaja" placeholder="Ingrese aquí su texto" rows="20" cols="50"></textarea>
+          <div id=paraCifrar>
+            <p class="instruccion"><span>PARA CIFRAR:</span><br>
+            <p class="instruccion">1.- Ingrese su texto en la caja de texto.</p>
+            <p class="instruccion">2.- Elija un numero para la clave.</p>
+            <p class="instruccion">3.- Presione el boton cifrar.</p>
+          </div>
+
+          <div id="paraDescifrar">
+            <p class="instruccion"><span>PARA DESCIFRAR:</span><br>
+            <p class="instruccion">1.- Ingrese el texto que desee descifrar en la caja de texto.</p>
+            <p class="instruccion">2.- Seleccione el número de clave.</p>
+            <p class="instruccion">3.- Presione el boton descifrar.</p>
+          </div>
+
       
-        <input  id="offset" type="number" min="0"/>Clave número
+            <!--     ___SECCION  CIFRAR___      -->
+          <p>Escriba su mensaje:</p>
+          <textarea id="textcaja" placeholder="Ingrese aquí su texto" rows="20" cols="50"></textarea>
+      
+          <div id=botones>
+            <input  id="offset" type="number" min="0" placeholder="número clave"/>
+            
+            <button id="actionCipher" type="button" class="boton" >CIFRAR</button>
         
-        <button id="actionCipher" type="button" class="boton" >CIFRAR</button>
+            <button id="actionDescipher" type="button" class="boton" >DESCIFRAR</button>
         
-        <button id="actionDescipher" type="button" class="boton" >DESCIFRAR</button>
-        
-        <button id="limpiar" type="button" class="boton" >LIMPIAR</button>
+            <button id="limpiar" type="button" class="boton" >LIMPIAR</button>
 
-        <textarea id="outText" rows="20" cols="50"></textarea>
-      </div>
-
+            <textarea id="outText" rows="20" cols="50"></textarea>
+          </div>
+        </div>
+    </div>
     </section>
 
     

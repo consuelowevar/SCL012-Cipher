@@ -51,10 +51,25 @@ span {
     background-color: #b34332
 }
 
-#instruccion {
-    background-color: red;
+.instruccion {
+    /*background-color: red;*/
+    line-height:10px ;
+}
 
+#container{
+    display: inline-block;
 
+}
+
+#botones {
+    display: inline-block;
+
+}
+
+#paraCifrar{
+    display: inline;
+    margin-left: 200px;
+    align-content: center;
 }
 
 .boton {
